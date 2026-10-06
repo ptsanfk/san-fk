@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="PT. SAN-FK - General Contractor, Steel Construction, Home Renovation. Solusi konstruksi profesional dan terintegrasi di Bandung Raya.">
+<title>PT. SAN-FK | General Contractor • Steel Construction • Home Renovation</title>
+<style>
+:root{--navy:#0b1730;--navy2:#142b52;--gold:#c99a4a;--gold2:#e1bd75;--light:#f5f7fa;--white:#fff;--text:#1d2735;--muted:#667085;--line:#e4e7ec;--shadow:0 18px 45px rgba(11,23,48,.12)}
+*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}body{font-family:Arial,Helvetica,sans-serif;color:var(--text);line-height:1.65}a{text-decoration:none;color:inherit}.container{width:min(1160px,92%);margin:auto}
+.top{background:#070e1c;color:#d8e0ed;font-size:13px;padding:8px 0}.top .container{display:flex;justify-content:space-between;gap:15px}
+header{position:sticky;top:0;z-index:50;background:rgba(11,23,48,.97);box-shadow:0 4px 20px #0002}.nav{height:72px;display:flex;align-items:center;justify-content:space-between}.brand{display:flex;align-items:center;gap:11px;color:#fff}.logo{width:43px;height:43px;border:2px solid var(--gold);border-radius:10px;display:grid;place-items:center;color:var(--gold);font-weight:900;font-size:23px}.brand b{display:block;letter-spacing:1px}.brand small{display:block;color:#aebbd0;font-size:9px;letter-spacing:1px}.links{display:flex;gap:23px;align-items:center;color:#e5ebf4;font-size:14px;font-weight:700}.links a:hover{color:var(--gold2)}.menu{display:none;background:none;border:0;color:#fff;font-size:27px}
+.btn{display:inline-block;padding:13px 21px;border-radius:9px;font-weight:800;transition:.2s}.primary{background:var(--gold);color:#111}.primary:hover{background:var(--gold2);transform:translateY(-2px)}.outline{border:1px solid #ffffff66;color:#fff}.dark{background:var(--navy);color:#fff}
+.hero{min-height:670px;background:linear-gradient(90deg,#070f20f5,#071122d9 48%,#07112299),radial-gradient(circle at 80% 20%,#c99a4a55,transparent 35%),linear-gradient(135deg,#18345e,#071020);color:#fff;display:flex;align-items:center;overflow:hidden}.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:55px;align-items:center}.eyebrow{color:var(--gold2);font-size:13px;font-weight:900;letter-spacing:2px;text-transform:uppercase;margin-bottom:15px}.eyebrow:before{content:"";display:inline-block;width:30px;height:2px;background:var(--gold);vertical-align:middle;margin-right:8px}.hero h1{font-size:clamp(40px,5.5vw,68px);line-height:1.04;margin-bottom:22px;letter-spacing:-2px}.hero h1 span{color:var(--gold2)}.hero p{font-size:18px;color:#d8e0ed;max-width:650px;margin-bottom:28px}.actions{display:flex;gap:12px;flex-wrap:wrap}.stats{display:flex;gap:30px;margin-top:34px;padding-top:24px;border-top:1px solid #ffffff20}.stats b{display:block;font-size:21px}.stats span{font-size:12px;color:#aebbd0}
+.visual{height:410px;border:1px solid #ffffff2b;border-radius:24px;background:linear-gradient(145deg,#ffffff20,#ffffff05);position:relative;box-shadow:0 35px 80px #0005}.roof{position:absolute;width:290px;height:175px;top:58px;left:calc(50% - 145px);transform:rotate(45deg);background:linear-gradient(145deg,#29466f,#101d34);border:2px solid #d7ae61aa;border-radius:12px}.house{position:absolute;left:70px;right:70px;bottom:45px;height:185px;background:linear-gradient(135deg,#f1f3f2,#cbd3dc);clip-path:polygon(0 27%,50% 0,100% 27%,100% 100%,0 100%);border-radius:8px}.door{position:absolute;width:60px;height:105px;bottom:45px;left:calc(50% - 30px);background:#142540;border:2px solid var(--gold);border-radius:7px 7px 0 0}.win{position:absolute;width:65px;height:52px;bottom:125px;background:#8db5cb;border:5px solid #223653}.w1{left:95px}.w2{right:95px}.badge{position:absolute;right:-12px;bottom:22px;background:#fff;color:var(--navy);padding:14px 18px;border-radius:13px;box-shadow:var(--shadow);font-weight:900}.badge small{display:block;color:var(--muted);font-weight:600}
+section{padding:90px 0}.head{text-align:center;max-width:760px;margin:0 auto 45px}.head h2{font-size:clamp(30px,4vw,45px);line-height:1.12;color:var(--navy);margin-bottom:12px}.head p{color:var(--muted)}.light{background:var(--light)}
+.grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:17px}.card{background:#fff;border:1px solid var(--line);border-radius:17px;padding:25px;box-shadow:0 7px 24px #0b17300a}.icon{width:46px;height:46px;border-radius:12px;background:#edf3fb;color:#1d4f91;display:grid;place-items:center;font-size:22px;margin-bottom:15px}.card h3{color:var(--navy);font-size:19px;margin-bottom:7px}.card p{color:var(--muted);font-size:14px}
+.services{display:grid;grid-template-columns:repeat(3,1fr);gap:19px}.service{border:1px solid var(--line);border-radius:18px;padding:27px;background:#fff;transition:.25s}.service:hover{transform:translateY(-5px);box-shadow:var(--shadow);border-color:#d5b36d}.num{color:var(--gold);font-size:12px;font-weight:900;letter-spacing:1px}.service h3{color:var(--navy);margin:9px 0}.service p{color:var(--muted);font-size:14px}
+.darksec{background:var(--navy);color:#fff}.darksec .head h2{color:#fff}.darksec .head p{color:#b9c6d9}.docs{display:grid;grid-template-columns:repeat(3,1fr);gap:17px}.doc{padding:23px;border:1px solid #ffffff18;border-radius:15px;background:#ffffff0a}.doc b{display:block;color:var(--gold2);margin-bottom:5px}.doc span{color:#c5cfdd;font-size:14px}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:17px;counter-reset:step}.step{border:1px solid var(--line);border-radius:16px;padding:23px;background:#fff}.step:before{counter-increment:step;content:counter(step);width:37px;height:37px;background:var(--gold);display:grid;place-items:center;border-radius:50%;font-weight:900;margin-bottom:14px}.step h3{color:var(--navy);font-size:17px;margin-bottom:6px}.step p{font-size:14px;color:var(--muted)}
+.cta{background:linear-gradient(120deg,var(--navy),#1b3a6a);color:#fff}.cta-box{display:flex;align-items:center;justify-content:space-between;gap:30px}.cta h2{font-size:clamp(30px,4vw,45px);line-height:1.1;margin-bottom:10px}.cta p{color:#c8d2df;max-width:700px}
+.faq{max-width:850px;margin:auto}.faq details{border-bottom:1px solid var(--line);padding:18px 0}.faq summary{cursor:pointer;font-weight:800;color:var(--navy);list-style:none;display:flex;justify-content:space-between}.faq summary:after{content:"+";color:var(--gold);font-size:22px}.faq details[open] summary:after{content:"−"}.faq p{padding-top:10px;color:var(--muted);font-size:14px}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:25px}.contact-card{background:#fff;border:1px solid var(--line);border-radius:19px;padding:28px}.contact-row{display:flex;gap:13px;margin:17px 0}.contact-row .icon{flex:none;margin:0}.contact-row b{display:block;color:var(--navy)}.contact-row span{font-size:14px;color:var(--muted)}.form{display:grid;gap:11px}.form input,.form select,.form textarea{font:inherit;padding:13px 14px;border:1px solid var(--line);border-radius:9px;outline:0}.form textarea{min-height:120px;resize:vertical}
+footer{background:#070e1c;color:#9daabd;padding:48px 0 20px}.foot{display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:35px}.foot h4{color:#fff;margin-bottom:12px}.foot a{display:block;margin:7px 0;font-size:14px}.copy{border-top:1px solid #ffffff12;margin-top:30px;padding-top:17px;text-align:center;font-size:12px}.wa{position:fixed;right:18px;bottom:18px;width:57px;height:57px;border-radius:50%;background:#20b866;color:#fff;display:grid;place-items:center;font-size:25px;box-shadow:0 10px 30px #0004;z-index:80}
+@media(max-width:900px){.links{display:none;position:absolute;top:72px;left:0;right:0;background:var(--navy);padding:18px 4%;flex-direction:column;align-items:flex-start}.links.open{display:flex}.menu{display:block}.hero{padding:65px 0}.hero-grid{grid-template-columns:1fr}.grid4,.steps{grid-template-columns:1fr 1fr}.services,.docs{grid-template-columns:1fr 1fr}.contact-grid{grid-template-columns:1fr}.foot{grid-template-columns:1fr 1fr}}
+@media(max-width:600px){.top{display:none}.nav{height:66px}.links{top:66px}.hero{min-height:auto;padding:55px 0}.hero p{font-size:16px}.visual{height:285px}.roof{width:220px;height:130px;left:calc(50% - 110px);top:42px}.house{left:40px;right:40px;bottom:30px;height:135px}.door{height:78px;bottom:30px}.win{width:50px;height:40px;bottom:92px}.w1{left:57px}.w2{right:57px}.badge{right:4px;bottom:7px;font-size:12px;padding:10px}.stats{gap:15px}.actions .btn{width:100%;text-align:center}section{padding:65px 0}.grid4,.steps,.services,.docs{grid-template-columns:1fr}.cta-box{flex-direction:column;align-items:flex-start}.foot{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+
+<div class="top"><div class="container"><span>PT. SAN-FK • GENERAL CONTRACTOR • STEEL CONSTRUCTION • HOME RENOVATION</span><span>Bandung Raya & sekitarnya</span></div></div>
+
+<header>
+<nav class="nav container">
+<a class="brand" href="#home"><span class="logo">S</span><span><b>PT. SAN-FK</b><small>GENERAL CONTRACTOR</small></span></a>
+<button class="menu" onclick="document.getElementById('links').classList.toggle('open')">☰</button>
+<div class="links" id="links">
+<a href="#home">Beranda</a><a href="#layanan">Layanan</a><a href="#proses">Proses</a><a href="#keunggulan">Keunggulan</a><a href="#faq">FAQ</a><a class="btn primary" href="#kontak">Konsultasi</a>
+</div>
+</nav>
+</header>
+
+<section class="hero" id="home">
+<div class="container hero-grid">
+<div>
+<div class="eyebrow">Kontraktor Profesional Bandung</div>
+<h1>Bangun & Renovasi dengan <span>Rencana yang Jelas.</span></h1>
+<p>PT. SAN-FK hadir sebagai mitra konstruksi untuk rumah, kantor, gudang, pekerjaan baja dan renovasi dengan perencanaan, RAB, pelaksanaan dan pengawasan yang terintegrasi.</p>
+<div class="actions"><a class="btn primary" href="#kontak">Konsultasi Proyek →</a><a class="btn outline" href="#layanan">Lihat Layanan</a></div>
+<div class="stats"><div><b>01</b><span>RAB transparan</span></div><div><b>02</b><span>Spesifikasi jelas</span></div><div><b>03</b><span>Pelaksanaan terukur</span></div></div>
+</div>
+<div class="visual"><div class="roof"></div><div class="house"></div><div class="win w1"></div><div class="win w2"></div><div class="door"></div><div class="badge">AMANAH • PROFESIONAL<small>Solusi konstruksi terintegrasi</small></div></div>
+</div>
+</section>
+
+<section class="light">
+<div class="container">
+<div class="head"><div class="eyebrow">Kenapa harus direncanakan?</div><h2>Jangan biarkan proyek berjalan tanpa kendali.</h2><p>Konstruksi yang baik dimulai dari komunikasi, gambar, spesifikasi, RAB dan jadwal kerja yang jelas.</p></div>
+<div class="grid4">
+<div class="card"><div class="icon">✓</div><h3>Biaya lebih terukur</h3><p>Kebutuhan pekerjaan dan RAB membantu mengendalikan keputusan material serta lingkup pekerjaan.</p></div>
+<div class="card"><div class="icon">⌂</div><h3>Gambar & spesifikasi</h3><p>Kebutuhan desain, gambar kerja dan detail teknis dibahas sebelum pekerjaan dilaksanakan.</p></div>
+<div class="card"><div class="icon">⏱</div><h3>Jadwal pekerjaan</h3><p>Target pekerjaan disusun berdasarkan lingkup, kondisi lapangan, material dan metode kerja.</p></div>
+<div class="card"><div class="icon">⚙</div><h3>Satu pintu</h3><p>Koordinasi pekerjaan sipil, renovasi dan konstruksi baja dapat dikelola dalam satu alur komunikasi.</p></div>
+</div></div></section>
+
+<section id="layanan">
+<div class="container">
+<div class="head"><div class="eyebrow">Layanan PT. SAN-FK</div><h2>Dari pekerjaan kecil sampai proyek terintegrasi.</h2><p>Sesuaikan layanan dengan kebutuhan bangunan, anggaran dan kondisi lapangan.</p></div>
+<div class="services">
+<div class="service"><span class="num">01 / GENERAL CONTRACTOR</span><h3>Bangun Rumah</h3><p>Pembangunan rumah tinggal dari persiapan, struktur, arsitektur hingga finishing.</p></div>
+<div class="service"><span class="num">02 / RENOVATION</span><h3>Renovasi Rumah</h3><p>Renovasi ruang, fasad, atap, lantai, dinding, penambahan ruang dan perbaikan bangunan.</p></div>
+<div class="service"><span class="num">03 / STEEL</span><h3>Steel Construction</h3><p>Konstruksi baja, rangka, kanopi, gudang, rak storage dan fabrikasi sesuai kebutuhan.</p></div>
+<div class="service"><span class="num">04 / COMMERCIAL</span><h3>Kantor & Ruko</h3><p>Pembangunan dan renovasi ruang komersial dengan pengaturan pekerjaan sesuai operasional klien.</p></div>
+<div class="service"><span class="num">05 / INDUSTRIAL</span><h3>Gudang & Struktur</h3><p>Solusi struktur, ruang kerja, gudang dan kebutuhan bangunan penunjang usaha.</p></div>
+<div class="service"><span class="num">06 / FINISHING</span><h3>Interior & Finishing</h3><p>Plafon, lantai, pengecatan, partisi, perbaikan dan finishing bangunan.</p></div>
+</div></div></section>
+
+<section class="darksec">
+<div class="container">
+<div class="head"><div class="eyebrow">Dokumen Proyek</div><h2>Keputusan proyek dibuat berdasarkan data.</h2><p>Dokumen yang tepat membantu klien memahami apa yang dibangun, kebutuhannya dan cara pelaksanaannya.</p></div>
+<div class="docs">
+<div class="doc"><b>01 • DENAH 2D</b><span>Gambaran tata ruang dan ukuran dasar bangunan.</span></div><div class="doc"><b>02 • VISUAL 3D</b><span>Referensi tampilan bangunan sebelum pekerjaan.</span></div><div class="doc"><b>03 • GAMBAR KERJA</b><span>Detail teknis sebagai acuan pelaksanaan.</span></div><div class="doc"><b>04 • RAB</b><span>Rincian pekerjaan, volume, material dan biaya.</span></div><div class="doc"><b>05 • TIME SCHEDULE</b><span>Rencana urutan dan durasi pekerjaan.</span></div><div class="doc"><b>06 • DOKUMENTASI</b><span>Catatan progres dan hasil akhir pekerjaan.</span></div>
+</div></div></section>
+
+<section id="proses">
+<div class="container">
+<div class="head"><div class="eyebrow">Alur Kerja</div><h2>Proyek bergerak langkah demi langkah.</h2><p>Alur dapat disesuaikan dengan skala dan jenis pekerjaan.</p></div>
+<div class="steps">
+<div class="step"><h3>Konsultasi & Survey</h3><p>Diskusi kebutuhan, lokasi, kondisi eksisting, ukuran dan target pekerjaan.</p></div>
+<div class="step"><h3>Desain & RAB</h3><p>Menentukan gambar, spesifikasi, volume pekerjaan dan estimasi anggaran.</p></div>
+<div class="step"><h3>Kontrak & Jadwal</h3><p>Lingkup, nilai, jadwal, termin dan tanggung jawab disepakati tertulis.</p></div>
+<div class="step"><h3>Pelaksanaan</h3><p>Pekerjaan dilaksanakan sesuai dokumen proyek dan koordinasi lapangan.</p></div>
+<div class="step"><h3>Kontrol Mutu</h3><p>Pengecekan pekerjaan, material dan progres selama pelaksanaan.</p></div>
+<div class="step"><h3>Serah Terima</h3><p>Checklist hasil pekerjaan dan penyelesaian item yang disepakati.</p></div>
+<div class="step"><h3>Dokumentasi</h3><p>Dokumen akhir proyek dapat disiapkan sesuai kebutuhan pekerjaan.</p></div>
+<div class="step"><h3>Pemeliharaan</h3><p>Ketentuan pemeliharaan/garansi mengikuti kontrak dan lingkup pekerjaan.</p></div>
+</div></div></section>
+
+<section class="light" id="keunggulan">
+<div class="container">
+<div class="head"><div class="eyebrow">Nilai Kerja</div><h2>Profesional dalam pekerjaan, terbuka dalam komunikasi.</h2><p>PT. SAN-FK mengutamakan kerja keras, keterbukaan, kepuasan klien dan amanah.</p></div>
+<div class="grid4">
+<div class="card"><h3>✓ Amanah</h3><p>Menjaga kepercayaan klien dan komitmen pekerjaan.</p></div><div class="card"><h3>✓ Transparan</h3><p>Lingkup, material dan biaya dibahas dengan jelas.</p></div><div class="card"><h3>✓ Terintegrasi</h3><p>Perencanaan dan pelaksanaan dikelola dalam satu alur.</p></div><div class="card"><h3>✓ Terukur</h3><p>Progres diarahkan berdasarkan volume dan target pekerjaan.</p></div>
+</div></div></section>
+
+<section class="cta"><div class="container cta-box"><div><h2>Punya rencana bangun atau renovasi?</h2><p>Kirimkan gambaran kebutuhan Anda. PT. SAN-FK membantu memetakan lingkup pekerjaan, material dan langkah berikutnya.</p></div><a class="btn primary" href="#kontak">Minta Konsultasi →</a></div></section>
+
+<section id="faq">
+<div class="container"><div class="head"><div class="eyebrow">FAQ</div><h2>Pertanyaan yang sering ditanyakan.</h2></div>
+<div class="faq">
+<details><summary>Apakah PT. SAN-FK melayani renovasi rumah?</summary><p>Ya. Layanan dapat mencakup renovasi ruang, fasad, atap, lantai, dinding, pengecatan, penambahan ruang dan perbaikan sesuai hasil survey.</p></details>
+<details><summary>Apakah bisa mengerjakan konstruksi baja?</summary><p>Ya. PT. SAN-FK melayani Steel Construction, termasuk rangka, kanopi, gudang, rak storage dan pekerjaan baja sesuai kebutuhan proyek.</p></details>
+<details><summary>Bagaimana cara mengetahui harga proyek?</summary><p>Nilai pekerjaan ditentukan setelah kebutuhan, ukuran, kondisi lokasi, spesifikasi material dan lingkup pekerjaan diketahui. RAB kemudian disusun sebagai dasar pembahasan.</p></details>
+<details><summary>Apakah bisa menggunakan desain dari arsitek sendiri?</summary><p>Bisa. Gambar dan spesifikasi yang tersedia dapat dikonsultasikan untuk disesuaikan dengan kebutuhan pelaksanaan dan RAB.</p></details>
+<details><summary>Apakah perubahan pekerjaan dapat dilakukan?</summary><p>Perubahan sebaiknya dibahas dan disepakati tertulis agar perubahan volume, biaya dan jadwal tercatat dengan jelas.</p></details>
+</div></div></section>
+
+<section class="light" id="kontak">
+<div class="container">
+<div class="head"><div class="eyebrow">Hubungi PT. SAN-FK</div><h2>Mulai dari konsultasi sederhana.</h2><p>Isi kebutuhan proyek. Form ini akan membuat pesan WhatsApp otomatis.</p></div>
+<div class="contact-grid">
+<div class="contact-card"><h2 style="color:var(--navy);margin-bottom:8px">PT. SAN-FK</h2><p style="color:var(--muted)">GENERAL CONTRACTOR • STEEL CONSTRUCTION • HOME RENOVATION</p>
+<div class="contact-row"><div class="icon">⌂</div><div><b>Area Layanan</b><span>Bandung Raya & sekitarnya</span></div></div>
+<div class="contact-row"><div class="icon">☎</div><div><b>WhatsApp</b><span id="phone">Nomor belum diatur</span></div></div>
+<div class="contact-row"><div class="icon">✉</div><div><b>Email</b><span id="email">Email belum diatur</span></div></div>
+</div>
+<div class="contact-card"><form class="form" onsubmit="sendWA(event)">
+<input id="nama" required placeholder="Nama Anda"><input id="hp" placeholder="Nomor WhatsApp">
+<select id="jenis"><option>Bangun Rumah</option><option>Renovasi Rumah</option><option>Steel Construction</option><option>Kantor / Ruko</option><option>Gudang</option><option>Lainnya</option></select>
+<input id="lokasi" placeholder="Lokasi proyek"><textarea id="detail" placeholder="Ceritakan kebutuhan proyek, ukuran, kondisi atau target..."></textarea>
+<button class="btn dark" type="submit">Kirim Konsultasi via WhatsApp →</button></form></div>
+</div></div></section>
+
+<footer><div class="container foot">
+<div><h3 style="color:#fff;margin-bottom:10px">PT. SAN-FK</h3><p>General Contractor • Steel Construction • Home Renovation.</p><p style="margin-top:8px">Membangun dengan perencanaan, kualitas dan amanah.</p></div>
+<div><h4>Layanan</h4><a href="#layanan">Bangun Rumah</a><a href="#layanan">Renovasi</a><a href="#layanan">Steel Construction</a><a href="#layanan">Gudang & Struktur</a></div>
+<div><h4>Navigasi</h4><a href="#proses">Proses Kerja</a><a href="#keunggulan">Keunggulan</a><a href="#faq">FAQ</a><a href="#kontak">Kontak</a></div>
+</div><div class="container copy">© <span id="year"></span> PT. SAN-FK. All Rights Reserved.</div></footer>
+
+<a class="wa" id="wa" href="#" aria-label="WhatsApp">☏</a>
+
+<script>
+/* ========= CONFIG: EDIT DATA KONTAK DI SINI ========= */
+const CONFIG={
+  whatsapp:"6280000000000", // GANTI dengan nomor WhatsApp PT. SAN-FK, contoh 6281234567890
+  phone:"Nomor WhatsApp belum diatur",
+  email:"info@san-fk.co.id"
+};
+function wa(message){return "https://wa.me/"+CONFIG.whatsapp+"?text="+encodeURIComponent(message)}
+document.getElementById("phone").textContent=CONFIG.phone;
+document.getElementById("email").textContent=CONFIG.email;
+document.getElementById("year").textContent=new Date().getFullYear();
+document.getElementById("wa").href=wa("Assalamu'alaikum PT. SAN-FK, saya ingin konsultasi mengenai proyek konstruksi.");
+function sendWA(e){
+ e.preventDefault();
+ const text=`Assalamu'alaikum PT. SAN-FK.
+
+Saya ingin konsultasi proyek.
+
+Nama: ${document.getElementById("nama").value}
+No. WhatsApp: ${document.getElementById("hp").value||"-"}
+Jenis pekerjaan: ${document.getElementById("jenis").value}
+Lokasi: ${document.getElementById("lokasi").value||"-"}
+
+Kebutuhan:
+${document.getElementById("detail").value||"-"}
+
+Mohon informasi dan arahan untuk langkah selanjutnya. Terima kasih.`;
+ window.open(wa(text),"_blank");
+}
+</script>
+</body>
+</html>
